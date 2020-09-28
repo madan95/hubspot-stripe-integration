@@ -7,6 +7,10 @@
         "STRIPE_SECRET_KEY": "xxxx"
     },
     "endpoints": {
+        "payment": {
+            "method": "POST",
+            "file": "payment.js"
+        },
         "stripewebhook": {
             "method": "POST",
             "file": "stripewebhook.js"

@@ -17,6 +17,15 @@ Project Summary :
 
 You can integrate it with your own hubspot `custom-theme`, and add the required `env` variables in your project.
 
+`STRIPE_PUBLIC_KEY` - Front-end stripe public key
+
+`HUBSPOT_INTEGRATIONS_API_KEY` - Serverless hubdb api key
+
+`STRIPE_WEBHOOK_ENDPOINT_SECRET_KEY` - Serverless stripe webhook key
+
+`STRIPE_SECRET_KEY` - Serverless stripe pricate key
+
+
 ## Built with
 
 - node
