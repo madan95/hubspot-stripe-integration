@@ -5,6 +5,7 @@ module.exports = (env, argv) => {
     const serverConfig = {
         target: 'node',
         entry: {
+            payment: './src/serverless-functions/payment.js',
             stripewebhook: './src/serverless-functions/stripewebhook.js'
         },
         output: {

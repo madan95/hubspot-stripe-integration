@@ -124,31 +124,6 @@ const createTableRow = (table_name, params) => {
         });
 }
 
-// Update table row & publish it.
-/*const updateTableRow = (table_name, row_id, params) => {
-    return getTableDetails(table_name)
-        .then(table_details => {
-            const url = `${BASE_API_URL}/tables/${table_details.table_id}/rows/${row_id}?hapikey=${APIKEY}`;
-            if (params) {
-                const data = params;
-                if (params.values) {
-                    const transformed_values = mapHubdbColumnNameToIds(table_details.table.columns, params.values);
-                    if(table_name == 'session-bookings')
-                    {
-                        data.path = row_id.toString();
-                    }
-                }
-                return axios.put(url, data).then(row_result => {
-                    return publishTable(table_details.table_id)
-                        .then(res => row_result.data);
-                });
-            }
-            return axios.put(url, {}).then(row_result => {
-                return publishTable(table_details.table_id)
-                    .then(res => row_result.data);
-            });
-        })
-}*/
 const updateTableRow = (table_name, row_id, params) => {
     return getTableDetails(table_name)
         .then(table_details => {
