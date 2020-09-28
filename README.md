@@ -6,8 +6,9 @@ Simple example of using hubspot (hubdb api, serverless functions) and stripe api
 
 Once you have the clone of the repo. Install the dependencies `yarn`, then run `yarn watch` to make changes on the serverless functions.
 
-Project Summary : 
-    src 
+Project Summary :
+
+    src
         - serverless-functions
             - [filename].js (serverless functions)
             - serverless.json (config for serverless functions along with `env` keys)
