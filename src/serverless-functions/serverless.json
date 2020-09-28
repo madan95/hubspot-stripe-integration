@@ -1,0 +1,15 @@
+{
+    "runtime": "nodejs12.x",
+    "version": "1.0",
+    "environment": {
+        "HUBSPOT_INTEGRATIONS_API_KEY": "xxxx",
+        "STRIPE_WEBHOOK_ENDPOINT_SECRET_KEY": "xxxx",
+        "STRIPE_SECRET_KEY": "xxxx"
+    },
+    "endpoints": {
+        "stripewebhook": {
+            "method": "POST",
+            "file": "stripewebhook.js"
+        }
+    }
+}

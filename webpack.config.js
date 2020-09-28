@@ -1,21 +1,21 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require('path');
 
-module.exports = () => {
+module.exports = (env, argv) => {
     const serverConfig = {
         target: 'node',
         entry: {
-            stripewebhook: '.src/serverless-functions/stripewebhook.js'
+            stripewebhook: './src/serverless-functions/stripewebhook.js'
         },
         output: {
             path: path.resolve(__dirname, 'custom-theme/functions/app.functions'),
             filename: '[name].js',
-            libraryTraget: 'umd'
+            libraryTarget: 'umd'
         },
         optimization: {
             minimize: false,
         },
-        plugin: [
+        plugins: [
             new CopyWebpackPlugin({
                 patterns: [
                     {
